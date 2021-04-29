@@ -3,6 +3,7 @@ const searchElement = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
 
+//set the values in for writing to the labels
 messageOne.textContent = ''
 messageTwo.textContent = ''
 
