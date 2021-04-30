@@ -5,7 +5,7 @@ const messageTwo = document.querySelector('#message-2')
 
 //set the values in for writing to the labels
 messageOne.textContent = ''
-messageTwo.textContent = ''
+
 
 weatherForm.addEventListener('submit', (e)=>{
     e.preventDefault()
@@ -13,6 +13,7 @@ weatherForm.addEventListener('submit', (e)=>{
     console.log(location)
 
     messageOne.textContent = 'Checking.....'
+    messageTwo.textContent = ''
 
     fetch('/weather?address='+location).then((response)=>{
     response.json().then((data)=>{
